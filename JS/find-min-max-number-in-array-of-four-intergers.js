@@ -16,8 +16,8 @@ console.log(max + "  "+min);
 
 
 function sumVal(i, array){
-    var newArray = array.slice();
-    newArray.splice(i, 1);
+    var newArray = array.slice(); // creates a new Array
+    newArray.splice(i, 1);  // removes 1 item at index i
     var sum = newArray.reduce(function(total, num){
         return total+num;
     })
