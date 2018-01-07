@@ -1,3 +1,11 @@
+/**
+ * [getSplitpoint description]
+ * This function sum all left to right and Tight to left elements
+ * checks for Sum equal every time and returns the SpotPoint
+ * @param  {[type]} ar [description]
+ * @param  {[type]} n  [description]
+ * @return {[type]}    [description]
+ */
 function getSplitpoint(ar, n){
 
     var sumLeft = 0;
@@ -18,6 +26,12 @@ function getSplitpoint(ar, n){
     return -1;
 }
 
+/**
+ * [splitArray : Split into two arrays]
+ * @param  {[type]} ar [description]
+ * @param  {[type]} n  [description]
+ * @return {[type]}    [description]
+ */
 function splitArray(ar, n){
     
     var splitPoint = getSplitpoint(ar, n);
@@ -36,11 +50,12 @@ function splitArray(ar, n){
 
 
 
-
+/**
+ * [ar interger Array]
+ * @type {Array}
+ */
 var ar = [1,2,3,4,5,5];
 
-var n  = ar.length;
-
-splitArray(ar, n);
+splitArray(ar, ar.length);
 
 
