@@ -17,3 +17,28 @@ function FirstFactorial(num) {
 }
    
 FirstFactorial(4);        
+
+
+
+// EX :2 
+function fact(num){
+    var res = 1;
+    for(var x= num; x > 1; x --){
+        res = res*x;        
+    }
+return res;
+}
+
+
+//EX : 3
+function fact2(n){
+
+    if(n <=0){
+        return 1;
+    }
+    else{
+         return n * fact2(n-1);
+    }
+}
+
+fact2(4);
