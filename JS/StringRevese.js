@@ -9,5 +9,7 @@ var newStr= '';
 }
    
 // keep this function call here 
-FirstReverse("Hello");                            
+FirstReverse("Hello");  
+
+OUTPUT : olleH
 
