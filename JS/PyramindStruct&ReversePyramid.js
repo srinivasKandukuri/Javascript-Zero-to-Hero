@@ -53,10 +53,8 @@ function py3(size){
        console.log(num);
    }
 }
-py(5)
+py3(5)
 
-
-py(5);
 
 OUTPUT: 
 5 4 3 2 1
