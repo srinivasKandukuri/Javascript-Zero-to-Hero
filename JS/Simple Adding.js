@@ -9,4 +9,21 @@ function addNum(num){
 return sum;
 }
 
-addNum(15);
+addNum(15); // return 120 
+
+
+// Recursion function 
+
+
+function sum(n){
+    
+    if(n ==1 ){
+        return 1;
+    }else{
+        var s = sum(n-1);
+        s = s + n;
+        return s;
+    }
+}
+
+sum(15);
