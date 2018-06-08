@@ -1,6 +1,6 @@
 /**
  * [getSplitpoint description]
- * This function sum all left to right and Tight to left elements
+ * This function sum all left to right and right to left elements
  * checks for Sum equal every time and returns the SpotPoint
  * @param  {[type]} ar [description]
  * @param  {[type]} n  [description]
