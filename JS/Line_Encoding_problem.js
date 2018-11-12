@@ -7,11 +7,6 @@ For s = "aabbbc", the output should be lineEncoding(s) = "2a3bc".
 */
 
 
-
-
-
-
-
 function lineEncoding(s) {
     var x = 1;    
     var result = '';
