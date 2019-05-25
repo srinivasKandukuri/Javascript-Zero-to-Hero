@@ -50,5 +50,8 @@ function quicksort(array) {
 
 
 /***** time complexity*********/
-Merge Sort is the fastest stable sorting algorithm with worst-case complexity of O(nlogn), but it requires extra space. Although, if memory constraints are very tight you can use Quick Sort, whose worst-time compelxity is O(n^{2}) but average case complexity is O(nlogn).
+
+// Merge Sort is the fastest stable sorting algorithm with worst-case complexity of O(nlogn), 
+// but it requires extra space. Although, if memory constraints are very tight you can use Quick Sort, 
+// whose worst-time compelxity is O(n^{2}) but average case complexity is O(nlogn).
 
