@@ -10,6 +10,10 @@ function qsort(arr){
     }
 
    const [pivot, ...rest] = arr;  // pivot = first element, rest = clone of array
+    
+    //or 
+    // const rest = arr.slice(0); // clone the array
+    // const pivot = rest[0];
    
    const left = [], right = [];
 
