@@ -55,3 +55,9 @@ function quicksort(array) {
 // but it requires extra space. Although, if memory constraints are very tight you can use Quick Sort, 
 // whose worst-time compelxity is O(n^{2}) but average case complexity is O(nlogn).
 
+
+Algorithm	Time Complexity
+
+                Best	        Worst
+Quicksort	    Ω(n log(n))	    O(n^2)
+Mergesort	    Ω(n log(n))	    O(n log(n))
