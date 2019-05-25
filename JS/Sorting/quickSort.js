@@ -23,3 +23,27 @@ function qsort(arr){
 }
 
 console.log(qsort([10,2,3,4,1,5]));
+
+
+
+
+
+/********** Method ES5 **********/
+
+function quicksort(array) {
+  var sortedArray = array.slice(0); // clone the array
+  if(sortedArray.length == 0) return [];
+
+  var left = [], right = [], pivot = sortedArray[0];
+
+  for (var i = 1; i < sortedArray.length; i++) {
+    if(sortedArray[i] < pivot) {
+      left.push(sortedArray[i]);
+    } else {
+      right.push(sortedArray[i]);
+    }
+  }
+
+  return quicksort(left).concat(pivot, quicksort(right));
+}
+
