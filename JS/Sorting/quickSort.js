@@ -58,6 +58,6 @@ function quicksort(array) {
 
 Algorithm	Time Complexity
 
-                Best	        Worst
+                    Best	        Worst
 Quicksort	    Ω(n log(n))	    O(n^2)
 Mergesort	    Ω(n log(n))	    O(n log(n))
