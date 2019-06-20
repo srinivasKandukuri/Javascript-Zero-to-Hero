@@ -31,3 +31,29 @@ for (var i = 0; i < numArray.length; i++) {
     numArray[j+1] = target
 }
 console.log(numArray);
+
+
+
+
+
+
+/* Sorting string using Selection Sort */
+
+
+
+function sort(str){
+
+    var numArray = str.split('');
+
+   for (var i = 0; i < numArray.length; i++) {
+    var target = numArray[i];
+    for (var j = i - 1; j >= 0 && (numArray[j] > target); j--) {
+        numArray[j+1] = numArray[j];
+    }
+    numArray[j+1] = target
+}
+  console.log(numArray);
+  console.log(numArray.join(''))
+}
+
+sort("zaasfweqrouoicxzvjlmmknkniqwerpopzxcvdfaa");
