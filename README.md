@@ -1,2 +1,2 @@
-# Javascript & PHP logical , Interview problems and Solutions
+# Javascript logical , Interview problems and Solutions
 
