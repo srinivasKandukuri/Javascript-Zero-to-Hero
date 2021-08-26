@@ -68,7 +68,44 @@ class DoubleLinkedList {
         node.next = nextNode;
         this.size++;
     }
+
+    removeAt(index) {
+
+        // remove head 
+        if (index == 0) {
+            this.head = this.head.next;
+            this.head.prev = null;
+            this.size--;
+            return this;
+        }
+
+        // remove tail
+        if (index == this.size) {
+
+            this.tail.prev = this.tail;
+            this.tail.next = null;
+            this.size--;
+            return this;
+        }
+
+        const previous = this.head;
+
+        for (leti = 0; i < index - 1; i++) {
+            previous = previous.next;
+        }
+
+        const deletenode = previous.next;
+        const nextnode = deletenode.next;
+
+        previous.next = nextnode;
+        nextnode.prev = previous;
+
+        this.size--;
+        return this;
+    }
 }
+
+
 
 
 var doubleLinkedList = new DoubleLinkedList();
