@@ -9,3 +9,13 @@ function Truncate(str, maxlength) {
       str.slice(0, maxlength - 1) + '…' : str;
 }
 
+
+/**
+ * 
+ * @param {*} str 
+ * @returns EX : console.log(extractCurrencyValue('$120') === 120 ); 
+ */
+function ExtractCurrencyValue(str){
+    return parseInt(str.slice(1));
+}
+
