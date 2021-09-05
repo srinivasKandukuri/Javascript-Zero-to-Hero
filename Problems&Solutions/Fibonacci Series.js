@@ -5,19 +5,19 @@ First two Fibonacci numbers are 0 and 1 . After that each number will be the sum
 */
 
 // Solution : 1
-
+/*
 var count = 0;
 var a = 0;
 var b = 1;
 console.log(a);
 console.log(b);
-while(count <5){
+while (count < 5) {
   var c;
   c = b + a;
   console.log(c);
   a = b;
   b = c;
- count= count+1;
+  count = count + 1;
 }
 
 
@@ -28,7 +28,7 @@ var a = 0;
 var b = 1;
 console.log(a);
 console.log(b);
-for (var i= 2 ; i<10; i++){
+for (var i = 2; i < 10; i++) {
   var c;
   c = b + a;
   console.log(c);
@@ -41,14 +41,10 @@ for (var i= 2 ; i<10; i++){
 //Solution 3
 //
 
-var fibonacci_series = function (n) 
-{
-  if (n===1) 
-  {
+var fibonacci_series = function (n) {
+  if (n === 1) {
     return [0, 1];
-  } 
-  else 
-  {
+  } else {
     var s = fibonacci_series(n - 1);
     s.push(s[s.length - 1] + s[s.length - 2]);
     return s;
@@ -64,7 +60,7 @@ console.log(fibonacci_series(8));
 
 
 
-
+*/
 
 /*var recursive = function(n) {
     if(n <= 2) {
@@ -75,3 +71,16 @@ console.log(fibonacci_series(8));
 };
 */
 
+
+function fib(n) {
+  if (n < 2) {
+    return n;
+  }
+  return fib(n - 1) + fib(n - 2); // Fn-1 + Fn-2
+}
+
+console.time('fib')
+
+console.log(fib(100)); // <---- The function you're measuring time for 
+
+console.timeEnd('fib')
