@@ -3,10 +3,37 @@ let initialVal = [];
 
 //removes duplicate values in array
 
-let noDupArray = scores.reduce(function (accumulator, currentval) {
+let noDupArray = scores.reduce(RemoveDuplicates, initialVal);
+
+function RemoveDuplicates(accumulator, currentval) {
     if (!accumulator.includes(currentval))
         accumulator.push(currentval);
     return accumulator;
-}, initialVal);
+}
 
 console.log(noDupArray);
+
+
+
+
+
+////// polyfill //////
+
+
+Array.prototype.myReduce = function (callback, initialValue) {
+    let accumulator = initialVal === undefined ? undefined : initialValue;
+    for (let i = 0; i < this.length; i++) {
+        if (accumulator != undefined)
+            accumulator = callback(this[i], i, this)
+        else
+            accumulator = this[i];
+    }
+    return accumulator;
+}
+
+
+
+let noDupArray1 = scores.myReduce(RemoveDuplicates, initialVal);
+
+
+console.log(noDupArray1);
