@@ -14,3 +14,21 @@ function isPrime(num){
 
 console.log(array.filter(isPrime));
 
+
+
+
+/////////// Polyfill //////////////
+
+
+
+Array.prototype.myFilter = function(callbackFunc){
+    let filteredArray = [], n= this.length;
+    for(let i=0; i<n; i++){
+        if(callbackFunc(this[i], i, this)){
+            filteredArray.push(this[i]);
+        }
+    }
+    return filteredArray;
+}
+
+console.log(array.myFilter(isPrime));
