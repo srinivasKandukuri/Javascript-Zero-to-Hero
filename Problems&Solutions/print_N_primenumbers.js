@@ -1,3 +1,9 @@
+/*
+1. A prime number is a natural number greater than 1, which is only divisible by 1 and itself. First few prime numbers are : 2 3 5 7 11 13 17 19 23 …..
+2. Two is the only even Prime number.
+3. Two and Three are only two consecutive natural numbers that are prime.
+*/
+
 function prime(n,flag) {
     ( typeof flag === "undefined" || flag === false ) ? flag = false : flag = true;
 
