@@ -24,7 +24,14 @@ function clone(obj) {
 
 // Native clone 
 
-/*Native deep cloning is known as “structured cloning” in Node.js. This feature is not available in the browser. Structured cloning supports an additional set of data types along with the ones that are supported by JSON. Here’s a list of additional data types it supports.*/
+/*
+
+Native deep cloning is known as “structured cloning” in Node.js. 
+This feature is not available in the browser. 
+Structured cloning supports an additional set of data types along with the ones that are supported by JSON. 
+Here’s a list of additional data types it supports.
+
+*/
 
 
 const v8 = require('v8');
