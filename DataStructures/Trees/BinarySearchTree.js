@@ -98,8 +98,47 @@ class BinarySearchTree {
         }
     }
 
-    
 
+    remove(data) {
+        this.root = this.removeNode(this.root, data);
+    }
+
+    removeNode(node, key) {
+        if (node == null) {
+            return null;
+        }
+        else if (key < node.data) {
+            node.left = this.removeNode(node.left, key);
+        }
+        else if(key > node.data){
+            node.right = this.removeNode(node.right, key);
+        }else{
+            if(node.left == null && node.right == null){
+                return null;
+            }
+
+            if(node.left == null){
+                node = node.right;
+                return node;
+            }
+            if(node.right == null){
+                node = node.left;
+                return node;
+            }
+
+            let aux = this.findMin(node.right);
+            node.data = aux.data;
+            node.right = this.removeNode(node.right, aux.data);
+            return node;
+        }
+    }
+
+    findMin(node){
+        if(!node.left)
+            return node;
+        else
+            return this.findMin(node.left);
+    }
 }
 
 
@@ -113,12 +152,17 @@ binarySearchTree.insert(30);
 
 binarySearchTree.insertRecursion(50);
 
-
+binarySearchTree.insertRecursion(40);
 binarySearchTree.insertRecursion(10);
 
 
 console.log(binarySearchTree);
 
 let val = binarySearchTree.findRecursion(30);
+
+console.log(val);
+
+
+let val = binarySearchTree.remove(30);
 
 console.log(val);
