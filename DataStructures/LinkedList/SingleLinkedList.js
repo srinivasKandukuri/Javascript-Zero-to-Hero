@@ -1,3 +1,6 @@
+// Ref
+// https://medium.com/geekculture/singly-linked-lists-javascript-d6d315b956f4
+
 // Userdefined class
 class Node {
     constructor(element) {
