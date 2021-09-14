@@ -5,6 +5,9 @@
   <br><br>
 </h1>
 
+
+![Jascript-Zero-to-Hero](https://raw.githubusercontent.com/srinivasKandukuri/Javascript-Zero-to-Hero/master/Sinppets/Images/c8fd384d7c164910c5758b34ea35e0aa.gif)
+
 ## Introduction
 
 This repository was created with the intention of helping developers master their concepts in JavaScript.
