@@ -1,4 +1,4 @@
-﻿<h1 align="center">
+<h1 align="center">
   <br>
     <br>
   Javascript DataStructures, Algorithms, Interview problems and Solutions
@@ -26,7 +26,7 @@ be accessed and modified efficiently. More precisely, a data structure is a coll
 values, the relationships among them, and the functions or operations that can be applied to
 the data.
 
-* [Linked List](https://github.dev/srinivasKandukuri/Javascript-Zero-to-Hero/blob/e599538ae96dea49545afd8b6f775ad3afa774cc/DataStructures/LinkedList)
+* [Linked List](https://github.com/srinivasKandukuri/Javascript-Zero-to-Hero/tree/master/DataStructures/LinkedList)
 ---
 
 
