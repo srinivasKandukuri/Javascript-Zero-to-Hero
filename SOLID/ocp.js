@@ -8,7 +8,7 @@ By designing classes and functions to be easily extended without modifying their
 
 */
 
-
+// EX:1
 
 const roles = ["admin", "user"]
 
@@ -26,3 +26,26 @@ addRole(role){
 
 addRole("superuser");
 checkRole("admin");
+
+
+
+//EX:2
+
+class Rectangle {
+    constructor(width, height) {
+        this.width = width;
+        this.height = height;
+    }
+    area() {
+        return this.width * this.height;
+    }
+}
+
+class Circle {
+    constructor(radius) {
+        this.radius = radius;
+    }
+    area() {
+        return Math.PI * Math.pow(this.radius, 2);
+    }
+}
